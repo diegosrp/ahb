@@ -25,7 +25,8 @@ The Terraform code provisions the following Azure resources:
 | 06 | Associate the schedule in the runbook within the automation account | a_ahb_schedule.tf |
 | 07 | Role Assignment in Management Group | r_ahb_iam.tf |
 
-![image](https://user-images.githubusercontent.com/73967829/232182271-ba5f833e-486c-4c0d-b62e-7b63a22a0b2b.png)
+![image](https://user-images.githubusercontent.com/73967829/232182703-e7426a21-4a27-4f49-baa1-542ad72e3001.png)
+
 
 ## Inputs
 The Terraform code requires the following input parameters:
