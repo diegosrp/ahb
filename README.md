@@ -19,11 +19,13 @@ The Terraform code provisions the following Azure resources:
 |--|--|--
 | 01 | Resource Group | r_resource_group.tf |
 | 02 | Automation Account | r_automation_account.tf |
-| 03 | Script for Runbook | powershell/ahb_automation.ps1 |
-| 04 | Runbook in Automation Account | r_ahb_runbook.tf |
-| 05 | Schedule Runbook in Automation Account | r_schedule.tf |
-| 06 | Associate Runbook in Automation Account | a_ahb_schedule.tf |
+| 03 | Runbook in Automation Account | r_ahb_runbook.tf |
+| 04 | Script for the Runbook | powershell/ahb_automation.ps1 |
+| 05 | Schedule the Runbook in the Automation Account | r_schedule.tf |
+| 06 | Associate the schedule in the runbook within the automation account | a_ahb_schedule.tf |
 | 07 | Role Assignment in Management Group | r_ahb_iam.tf |
+
+![image](https://user-images.githubusercontent.com/73967829/232182271-ba5f833e-486c-4c0d-b62e-7b63a22a0b2b.png)
 
 ## Inputs
 The Terraform code requires the following input parameters:
@@ -46,5 +48,6 @@ A runbook with a PowerShell script is created to enable the Azure Hybrid Benefit
 In this case, the code is for the management group you specify and will run monthly on the last day of each month at 5:00 AM New Zealand time.
 
 ### NOTE: If you are going to use this code after 30/04/2023, it will be necessary to update the "start_time" parameter in the r_schedule.tf file.
+
 
 
